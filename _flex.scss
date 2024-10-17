@@ -1,0 +1,40 @@
+%card-style {
+    border: 1px solid $secondary-color;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.flex-layout {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.city-card {
+    flex: 1 1 calc(25% - 20px);
+    background-color: #f8f9fa;
+    padding: 15px;
+
+
+    @extend %card-style;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    h4 {
+        margin-top: 10px;
+        color: $primary-color;
+    }
+
+
+    &:hover {
+        transform: scale(1.05);
+        content: "Hovering over " + #{"Milan"}; 
+    }
+}
