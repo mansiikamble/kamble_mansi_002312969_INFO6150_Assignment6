@@ -58,7 +58,15 @@
   content: "Hovering over Milan";
 }
 
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
 body {
+  background-color: rgb(239, 186, 113);
   background-color: rgb(239, 186, 113);
 }
 
